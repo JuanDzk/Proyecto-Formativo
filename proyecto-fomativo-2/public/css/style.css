@@ -58,7 +58,7 @@ div.record-one {
 .buttons button {
     cursor: pointer;
     padding: 0.7rem;
-    background-color: #f90000;
+    background-color: #000;
     color: #fff;
     border-bottom: none;
     border-radius: 5px;

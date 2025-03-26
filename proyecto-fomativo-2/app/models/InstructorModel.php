@@ -21,7 +21,7 @@ class InstructorModel extends BaseModel
         try {
             $sql = "SELECT * FROM $this->table WHERE email = :email";
             $statement = $this->dbConnection->prepare($sql);
-            $statement->bindParam(":email", $user, PDO::PARAM_STR);
+            $statement->bindParam(":email",$email);
             $statement->execute();
             $instructor = $statement->fetch(PDO::FETCH_OBJ);
 

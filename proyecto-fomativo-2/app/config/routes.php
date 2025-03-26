@@ -148,6 +148,10 @@ return [
         "controller" => "App\Controllers\ProgramaFormacionController",
         "action" => "view"
     ],
+    "/programaFormacion/view/(\d+)" => [
+        "controller" => "App\Controllers\ProgramaFormacionController",
+        "action" => "viewProgramaFormacion"
+    ],
     "/programaFormacion/new" => [
         "controller" => "App\Controllers\ProgramaFormacionController",
         "action" => "newProgramaFormacion"

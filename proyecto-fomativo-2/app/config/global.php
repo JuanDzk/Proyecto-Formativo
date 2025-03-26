@@ -1,5 +1,5 @@
 <?php
-define("INACTIVE_TIME", 10);
+// define("INACTIVE_TIME", 10);
 define("MAIN_APP_ROUTE", __DIR__ . '/../app/');
 define("DRIVER", 'mysql');
 define("HOST", 'localhost');

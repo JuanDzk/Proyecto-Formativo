@@ -8,7 +8,6 @@ require_once '../app/controllers/MomentosAprendizajeController.php';
 require_once '../app/controllers/ProgramaFormacionController.php';
 require_once '../app/controllers/ResultadoController.php';
 require_once '../app/controllers/TecnicasDidacticasController.php';
-require_once '../app/controllers/LoginController.php';
 
 
 $url = $_SERVER['REQUEST_URI']; //Lo que se ingresa en la URL
@@ -30,7 +29,11 @@ if ($matchedRoute) {
         $controller = new $controllerName();
         $controller->$actionName(...$parameters);
         exit;
+    } else {
+        echo "No existe la clase o el metodo";
     }
+} else {
+    echo "No existe la ruta";
 }
 
-header('Location: /login/init');
+// header('Location: /login/init');

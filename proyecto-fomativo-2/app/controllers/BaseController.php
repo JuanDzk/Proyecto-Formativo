@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Controllers;
-
 session_start();
 
 class BaseController
@@ -10,15 +9,15 @@ class BaseController
 
     public function __construct()
     {
-        if (isset($_SESSION['timeOut'])) {
-            $tiempoSesion = time() - $_SESSION['timeOut'];
-            if ($tiempoSesion > INACTIVE_TIME * 60) {
-                session_destroy();
-                header('Location:/login/init');
-            } else {
-                $_SESSION['timeOut'] = time();
-            }
-        }
+        // if (isset($_SESSION['timeOut'])) {
+        //     $tiempoSesion = time() - $_SESSION['timeOut'];
+        //     if ($tiempoSesion > INACTIVE_TIME * 60) {
+        //         session_destroy();
+        //         header('Location:/login/init');
+        //     } else {
+        //         $_SESSION['timeOut'] = time();
+        //     }
+        // }
     }
 
     public function render(string $view, array $arrayData = null)

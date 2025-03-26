@@ -9,6 +9,11 @@ require_once MAIN_APP_ROUTE . '../models/ProgramaFormacionModel.php';
 
 class ProgramaFormacionController extends BaseController
 {
+    public function __construct()
+    {
+        $this->layout = "admin_layout";
+        parent::__construct();
+    }
     public function view()
     {
         $programaModel = new ProgramaFormacionModel();
@@ -37,6 +42,17 @@ class ProgramaFormacionController extends BaseController
             $programaModel->saveProgramaFormacion($codProgramaFormacion, $nombre);
             $this->redirectTo("programaFormacion/view");
         }
+    }
+
+    public function viewProgramaFormacion($id)
+    {
+        $programaFormacionObj = new ProgramaFormacionModel();
+        $programaInfo = $programaFormacionObj->getProgramaFormacion($id);
+        $data = [
+            "programa" => $programaInfo,
+            "title" => "Vista de un programa de Formación"
+        ];
+        $this->render('programaFormacion/viewOneProgramaFormacion.php', $data);
     }
 
     public function editProgramaFormacion($id)

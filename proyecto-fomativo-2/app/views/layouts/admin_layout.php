@@ -15,25 +15,18 @@
         <aside class="sidebar">
             <div class="sidebar-content">
                 <div class="logo">
-                    <img src="/img/image.png" alt="Logo">
-                    <span class="logo-text">GymCpic</span>
+                    <!-- <img src="/img/image.png" alt="Logo"> -->
+                    <span class="logo-text">Gestion Guias</span>
                 </div>
                 <nav class="menu">
                     <ul>
-                        <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == 1): ?>
-                            <li><a href="/centroFormacion/view"><i class="fas fa-building"></i><span>Centros</span></a></li>
-                            <li><a href="/programaFormacion/view"><i class="fas fa-calendar-alt"></i><span>Programas</span></a></li>
-                        <?php endif ?>
-                        <li><a href="/rol/view"><i class="fas fa-user-shield"></i><span>Roles</span></a></li>
-                        <li><a href="/actividad/view"><i class="fas fa-user-tag"></i><span>Actividad</span></a></li>
-                        <li><a href="/usuario/view"><i class="fas fa-user"></i><span>Usuario</span></a></li>
-                        <li><a href="/grupo/view"><i class="fas fa-users"></i><span>Grupo</span></a></li>
-                        <li><a href="/tipoUsuarioGym/view"><i class="fas fa-user-circle"></i><span>Tipo Usuario</span></a></li>
-                        <li><a href="/controlProgreso/view"><i class="fas fa-cogs"></i><span>Control</span></a></li>
-                        <li><a href="/registroIngreso/view"><i class="fas fa-clipboard-list"></i><span>Registro</span></a></li>
-                        <?php if (isset($_SESSION['nombre'])): ?>
+
+                        <li><a href="/competencia/view"><i class="fas fa-calendar-alt"></i><span>Competencia</span></a></li>
+                        <li><a href="/programaFormacion/view"><i class="fas fa-calendar-alt"></i><span>Programas</span></a></li>
+
+                        <!-- <?php if (isset($_SESSION['nombre'])): ?>
                             <li><a href="/login/logout"><i class="fas fa-sign-out-alt"></i><span>Cerrar sesión (<?php echo $_SESSION['nombre'] ?? ""; ?>)</span></a></li>
-                        <?php endif; ?>
+                        <?php endif; ?> -->
                     </ul>
                 </nav>
             </div>
