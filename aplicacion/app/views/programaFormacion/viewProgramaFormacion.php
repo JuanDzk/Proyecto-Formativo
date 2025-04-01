@@ -6,7 +6,6 @@
     </div>
     <div class="info">
         <?php
-        echo "VISTA";
         if (empty($programas)) {
             echo '<br>No se encuentran programas de formación en la base de datos';
         } else {

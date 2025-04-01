@@ -5,7 +5,7 @@
     box-shadow: 0px 2px 5px #bf41d8;
     margin: auto;
     margin-top: 100px;
-    /* Centrar verticalmente */
+    
 }
 
 body {
@@ -13,9 +13,8 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    /* Ocupa toda la altura de la ventana */
     background-color: #f4f4f4;
-    /* Color de fondo */
+    
 }
 
 .input-group {

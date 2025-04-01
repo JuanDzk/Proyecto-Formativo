@@ -6,8 +6,8 @@
     if ($momentos && is_object($momentos)) {
         echo "
             <div class='record-one'>
-                <span>ID: $momentos->idMomentosAprendizaje</span>
-                <span>Nombre: $momentos->nombre</span>
+                <span>ID: $momentos->idMomentosAprendizaje <br> 
+                Nombre: $momentos->nombre</span>
             </div>
         ";
     }

@@ -15,20 +15,21 @@
         <aside class="sidebar">
             <div class="sidebar-content">
                 <div class="logo">
-                    <!-- <img src="/img/image.png" alt="Logo"> -->
+                    <img src="/images/image.png" alt="Logo">
                     <span class="logo-text">Gestion Guias</span>
                 </div>
                 <nav class="menu">
                     <ul>
 
-                        <li><a href="/competencia/view"><i class="fas fa-calendar-alt"></i><span>Competencia</span></a></li>
-                        <li><a href="/especialidad/view"><i class="fas fa-calendar-alt"></i><span>Especialidad</span></a></li>
-                        <li><a href="/guia/view"><i class="fas fa-calendar-alt"></i><span>Guia</span></a></li>
-                        <li><a href="/instructor/view"><i class="fas fa-calendar-alt"></i><span>Instructores</span></a></li>
-                        <li><a href="/momentosAprendizaje/view"><i class="fas fa-calendar-alt"></i><span>Momentos de Aprendizaje</span></a></li>
-                        <li><a href="/programaFormacion/view"><i class="fas fa-calendar-alt"></i><span>Programas</span></a></li>
-                        <li><a href="/resultado/view"><i class="fas fa-calendar-alt"></i><span>Resultado</span></a></li>
-                        <li><a href="/tecnicasDidacticas/view"><i class="fas fa-calendar-alt"></i><span>Tecnicas Didacticas</span></a></li>
+                        <li><a href="/competencia/view"><i class="fas fa-trophy"></i><span>Competencia</span></a></li>
+                        <li><a href="/especialidad/view"><i class="fas fa-user-graduate"></i><span>Especialidad</span></a></li>
+                        <li><a href="/guia/view"><i class="fas fa-book-open"></i><span>Guia</span></a></li>
+                        <li><a href="/instructor/view"><i class="fas fa-chalkboard-teacher"></i><span>Instructores</span></a></li>
+                        <li><a href="/momentosAprendizaje/view"><i class="fas fa-lightbulb"></i><span>Momentos de Aprendizaje</span></a></li>
+                        <li><a href="/programaFormacion/view"><i class="fas fa-graduation-cap"></i><span>Programas</span></a></li>
+                        <li><a href="/resultado/view"><i class="fas fa-chart-line"></i><span>Resultado</span></a></li>
+                        <li><a href="/tecnicasDidacticas/view"><i class="fas fa-tools"></i><span>Tecnicas Didacticas</span></a></li>
+
 
                         <!-- <?php if (isset($_SESSION['nombre'])): ?>
                             <li><a href="/login/logout"><i class="fas fa-sign-out-alt"></i><span>Cerrar sesión (<?php echo $_SESSION['nombre'] ?? ""; ?>)</span></a></li>
@@ -42,13 +43,14 @@
         <main class="main-content">
             <header class="header">
                 <div class="header-container">
-                    <button class="menu-toggle"><i class="fas fa-bars"></i> Menu</button>
+                    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
                     <h1><?php echo $title ?></h1>
                     <div class="search-container">
                         <i class="fas fa-search search-icon"></i>
                         <input type="text" class="search-input" placeholder="Buscar...">
                     </div>
                     <div class="header-icons">
+                        
                         <i class="fas fa-bell"></i>
                         <i class="fas fa-user"></i>
                         <i class="fas fa-adjust"></i>
@@ -60,7 +62,7 @@
             </div>
         </main>
     </div>
-
+  
     <script src="/js/admin-functions.js"></script>
 </body>
 

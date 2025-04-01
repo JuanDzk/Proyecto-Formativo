@@ -6,9 +6,7 @@
     if ($especialidad && is_object($especialidad)) {
         echo "
             <div class='record-one'>
-                <span>ID: $especialidad->idEspecialidad</span>
-                <span>Nombre: $especialidad->nombre</span>
-                <span>Descripción: $especialidad->descripcion</span>
+                <span>ID: $especialidad->idEspecialidad <br> Nombre: $especialidad->nombre <br> Descripción: $especialidad->descripcion</span>
             </div>
         ";
     }

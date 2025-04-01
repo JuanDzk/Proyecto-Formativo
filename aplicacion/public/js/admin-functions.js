@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mainContent.classList.add('expanded');
         expandButton.style.display = 'flex';
     }
+    
 
     // Función para expandir el sidebar
     function expandSidebar() {

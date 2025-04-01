@@ -6,9 +6,9 @@
     if ($tecnica && is_object($tecnica)) {
         echo "
             <div class='record-one'>
-                <span>ID: $tecnica->idTecnicasDidacticas</span>
-                <span>Nombre: $tecnica->nombre</span>
-                <span>Descripción: $tecnica->descripcion</span>
+                <span>ID: $tecnica->idTecnicasDidacticas <br>
+                Nombre: $tecnica->nombre <br>
+                Descripción: $tecnica->descripcion</span>
             </div>
         ";
     }

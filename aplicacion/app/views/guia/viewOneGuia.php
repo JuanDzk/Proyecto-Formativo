@@ -6,15 +6,15 @@
     if ($guia && is_object($guia)) {
         echo "
             <div class='record-one'>
-                <span>ID: $guia->idGuia</span>
-                <span>Nombre: $guia->nombre</span>
-                <span>Presentación: $guia->presentacion</span>
-                <span>Glosario de Términos: $guia->glosarioTerminos</span>
-                <span>Referentes Bibliográficos: $guia->referentesBibliograficos</span>
-                <span>Razón de Cambio: $guia->razonCambio</span>
-                <span>Instructor: $guia->fkIdInstructor</span>
-                <span>Programa de Formacion: $guia->fkIdProgramaFormacion</span>
-                <span>Especialidad: $guia->fkIdEspecialidad</span>
+                <span>ID: $guia->idGuia <br>
+                Nombre: $guia->nombre <br>
+                Presentación: $guia->presentacion <br>
+                Glosario de Términos: $guia->glosarioTerminos <br>
+                Referentes Bibliográficos: $guia->referentesBibliograficos <br>
+                Razón de Cambio: $guia->razonCambio <br>
+                Instructor: $guia->fkIdInstructor <br>
+                Programa de Formacion: $guia->fkIdProgramaFormacion <br>
+                Especialidad: $guia->fkIdEspecialidad</span>
             </div>
         ";
     }
